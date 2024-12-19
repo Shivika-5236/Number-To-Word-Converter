@@ -33,17 +33,17 @@ nav ul li a, nav .btn {
 }
 
 nav ul li a:hover, nav .btn:hover {
-  color: #9b4bc3; /* Hover effect with Pinkish-Purple */
+  color: #9b4bc3;
 }
 
 /* Welcome Section */
 .welcome {
   display: flex;
-  justify-content: center; /* Centers content horizontally */
-  align-items: center; /* Centers content vertically */
-  text-align: center; /* Ensures text is centered */
+  justify-content: center; 
+  align-items: center;
+  text-align: center; 
   padding: 5rem 3rem;
-  background-color: #eef2f3; /* Light greyish background */
+  background-color: #eef2f3;
 }
 
 .welcome .content {
@@ -104,19 +104,3 @@ footer p {
   font-size: 1rem;
 }
 
-/* Ensuring mobile responsiveness */
-@media (max-width: 768px) {
-  .welcome {
-    flex-direction: column;
-    padding: 2rem;
-  }
-
-  .welcome .content {
-    max-width: 100%;
-    text-align: center;
-  }
-
-  nav ul {
-    gap: 1.5rem;
-  }
-}
