@@ -1,0 +1,122 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #fafafa; /* Light background */
+  color: #333; /* Dark text for better contrast */
+}
+
+header {
+  background-color: #c650fd; /* Purple background */
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #9b4bc3; /* Light Pinkish-Purple */
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 2rem;
+}
+
+nav ul li a, nav .btn {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover, nav .btn:hover {
+  color: #9b4bc3; /* Hover effect with Pinkish-Purple */
+}
+
+/* Welcome Section */
+.welcome {
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  text-align: center; /* Ensures text is centered */
+  padding: 5rem 3rem;
+  background-color: #eef2f3; /* Light greyish background */
+}
+
+.welcome .content {
+  max-width: 60%;
+}
+
+.welcome .content h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #4e46e2; /* Purple Text */
+}
+
+.welcome .content p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.welcome .content button {
+  padding: 0.5rem 1rem;
+  background-color: #b771db; /* Pinkish-Purple */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.welcome .content button:hover {
+  background-color: #6c63ff; /* Blueish hover effect */
+  transform: scale(1.05); /* Slight button hover effect */
+}
+
+/* Footer */
+footer {
+  padding: 2rem;
+  background-color: #333; /* Dark background */
+  color: white;
+  text-align: center;
+}
+
+footer .social-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+footer .social-links a:hover {
+  color: #9b4bc3; /* Pinkish-Purple hover effect */
+}
+
+footer p {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+/* Ensuring mobile responsiveness */
+@media (max-width: 768px) {
+  .welcome {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .welcome .content {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  nav ul {
+    gap: 1.5rem;
+  }
+}

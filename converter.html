@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WordMyNumber</title>
+  <link rel="stylesheet" href="./converterstyle.css">
+  </head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>WordMyNumber</h1>
+      <p>"Turn Digits Into Words – Seamlessly, Globally, Accurately!"</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="./welcomepage.html">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="features" class="features">
+    <div class="tabs">
+      <label for="caseSelect">Select Case:</label>
+      <select id="caseSelect" aria-label="Select text case">
+        <option value="uppercase">Uppercase</option>
+        <option value="lowercase">Lowercase</option>
+        <option value="camel">Camel Case</option>
+      </select>
+
+      <label for="scaleSelect">Numbering System:</label>
+      <select id="scaleSelect" aria-label="Select numbering system">
+        <option value="InternationalSystem">International System</option>
+        <option value="IndianSystem">Indian System</option>
+      </select>
+      <button id="chequeButton">Writing Cheque</button>
+    </div>
+
+    <div class="converter">
+      <h3>Number to Word Converter</h3>
+      <p>Enter a number to convert it into its word format:</p>
+      <input type="text" id="numberInput" placeholder="Enter a number" />
+      <button id="convertButton">Convert</button><br>
+      <p id="result"></p>
+      
+    </div>
+  </section>
+
+  <footer>
+    <p> WordMyNumber</p>
+    <a href="./about.html">About</a>
+    <div class="social-links">
+      <a href="https://github.com/yourrepo" target="_blank">GitHub</a>
+      <a href="https://www.instagram.com/yourprofile" target="_blank">Instagram</a>
+      <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+    </div>
+  </footer>
+
+  <script src="./converterscript.js"></script>
+  
+</body>
+</html>

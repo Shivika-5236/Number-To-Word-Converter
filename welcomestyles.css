@@ -1,0 +1,217 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: #b14cec;
+  color: #333;
+}
+
+header {
+  background: #2ecbd9;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid #ddd;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Navigation Bar */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 2rem;
+  animation: slideInFromLeft 1s ease-in-out;
+}
+
+nav ul li a, nav .btn {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover, nav .btn:hover {
+  color: #ffcc00;
+}
+
+/* Welcome Section */
+.welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5.5rem 2rem;
+  background: linear-gradient(135deg,white);
+  border-bottom: 2px solid #ddd;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.welcome .content {
+  max-width: 80%;
+}
+
+.welcome .content h2 {
+  font-size: 3.2rem;
+  margin-bottom: 2rem;
+  color: #100c0c;
+  font-weight: bold;
+  animation: zoomIn 1.5s ease-in-out;
+}
+
+.welcome .content p {
+  font-size: 1.2rem;
+  color: #0f0707;
+  margin-bottom: 1.5rem;
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+.welcome .content button {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  background-color: #8680ce;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  animation: bounceIn 1.5s ease-in-out;
+}
+
+.welcome .content button:hover {
+  background-color: #3b2d99;
+  transform: scale(1.05);
+}
+
+/* Button Container */
+.button-container {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+/* Primary Button Style */
+.btn-primary,
+.btn-secondary {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  background-color: #15dfdf;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Hover Effect */
+.btn-primary:hover,
+.btn-secondary:hover {
+  background-color: #b3a9f4;
+  transform: scale(1.05);
+}
+
+/* Secondary Button Style */
+.btn-secondary {
+  background-color: #ffcc00;
+  color: #333;
+}
+
+.btn-secondary:hover {
+  background-color: #e6b800;
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  padding: 2rem;
+  background: #35c2e1;
+  color: rgb(246, 241, 241);
+  text-align: center;
+  box-shadow: 0 -4px 6px rgba(240, 236, 236, 0.1);
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+footer .social-links {
+  margin-top: 0rem;
+}
+
+footer .social-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+footer .social-links a:hover {
+  color: #ffcc00;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bounceIn {
+  0%, 20%, 40%, 60%, 80%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
