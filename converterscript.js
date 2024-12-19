@@ -5,46 +5,8 @@ const numberToWords = (num) => {
     const scales = [
         '', 'thousand', 'million', 'billion', 'trillion', 'quadrillion', 'quintillion', 'sextillion', 
         'septillion', 'octillion', 'nonillion', 'decillion', 'undecillion', 'duodecillion', 'tredecillion', 
-        'quattuordecillion', 'quindecillion', 'sexdecillion', 'septendecillion', 'octodecillion', 
-        'novemdecillion', 'vigintillion', 'unvigintillion', 'duovigintillion', 'trevigintillion', 
-        'quattuorvigintillion', 'quinvigintillion', 'sexvigintillion', 'septvigintillion', 'octovigintillion', 
-        'novemvigintillion', 'trigintillion', 'untrigintillion', 'duotrigintillion', 'tretrigintillion', 
-        'quattuortrigintillion', 'quintrigintillion', 'sextrigintillion', 'septtrigintillion', 'octotrigintillion', 
-        'novemtrigintillion', 'quadragintillion', 'unquadragintillion', 'duoquadragintillion', 'trequadragintillion', 
-        'quattuorquadragintillion', 'quinquadragintillion', 'sexquadragintillion', 'septquadragintillion', 
-        'octoquadragintillion', 'novemquadragintillion', 'quinquagintillion', 'unquinquagintillion', 
-        'duoquinquagintillion', 'trequinquagintillion', 'quattuorquinquagintillion', 'quinquinquagintillion', 
-        'sexquinquagintillion', 'septquinquagintillion', 'octoquinquagintillion', 'novemquinquagintillion', 
-        'sexagintillion', 'unsexagintillion', 'duosexagintillion', 'tresexagintillion', 'quattuorsexagintillion', 
-        'quinsexagintillion', 'sexsexagintillion', 'septsexagintillion', 'octosexagintillion', 'novemsexagintillion', 
-        'septuagintillion', 'unseptuagintillion', 'duoseptuagintillion', 'treseptuagintillion', 
-        'quattuorseptuagintillion', 'quinseptuagintillion', 'sexseptuagintillion', 'septseptuagintillion', 
-        'octoseptuagintillion', 'novemseptuagintillion', 'octogintillion', 'unoctogintillion', 
-        'duooctogintillion', 'treoctogintillion', 'quattuoroctogintillion', 'quinoctogintillion', 
-        'sexoctogintillion', 'septoctogintillion', 'octooctogintillion', 'novemoctogintillion', 
-        'nonagintillion', 'unnonagintillion', 'duononagintillion', 'trennonagintillion', 'quattuornonagintillion', 
-        'centillion', 'uncentillion', 'duocentillion', 'trecentillion', 'quattuorcentillion', 'quincentillion', 
-        'sexcentillion', 'septcentillion', 'octocentillion', 'novemcentillion', 'decacentillion', 'undecacentillion', 
-        'duodecacentillion', 'tredecacentillion', 'quattuordecacentillion', 'quindecacentillion', 'sexdecacentillion', 
-        'septendecacentillion', 'octodecacentillion', 'novemdecacentillion', 'viginticentillion', 'unviginticentillion', 
-        'duoviginticentillion', 'treviginticentillion', 'quattuorviginticentillion', 'quinviginticentillion', 
-        'sexviginticentillion', 'septviginticentillion', 'octoviginticentillion', 'novemviginticentillion', 'triginticentillion', 
-        'untriginticentillion', 'duotriginticentillion', 'tretriginticentillion', 'quattuortriginticentillion', 'quintriginticentillion', 
-        'sextriginticentillion', 'septtriginticentillion', 'octotriginticentillion', 'novemtriginticentillion', 'quadraginticentillion', 
-        'unquadraginticentillion', 'duoquadraginticentillion', 'trequadraginticentillion', 'quattuorquadraginticentillion', 'quinquadraginticentillion', 
-        'sexquadraginticentillion', 'septquadraginticentillion', 'octoquadraginticentillion', 'novemquadraginticentillion', 'quinquaginticentillion', 
-        'unquinquaginticentillion', 'duoquinquaginticentillion', 'trequinquaginticentillion', 'quattuorquinquaginticentillion', 'quinquinquaginticentillion', 
-        'sexquinquaginticentillion', 'septquinquaginticentillion', 'octoquinquaginticentillion', 'novemquinquaginticentillion', 'sexaginticentillion', 
-        'unsexaginticentillion', 'duosexaginticentillion', 'tresexaginticentillion', 'quattuorsexaginticentillion', 'quinsexaginticentillion', 
-        'sexsexaginticentillion', 'septsexaginticentillion', 'octosexaginticentillion', 'novemsexaginticentillion', 'septuaginticentillion', 
-        'unseptuaginticentillion', 'duoseptuaginticentillion', 'treseptuaginticentillion', 'quattuorseptuaginticentillion', 'quinseptuaginticentillion', 
-        'sexseptuaginticentillion', 'septseptuaginticentillion', 'octoseptuaginticentillion', 'novemseptuaginticentillion', 'octoginticentillion', 
-        'unoctoginticentillion', 'duooctoginticentillion', 'treoctoginticentillion', 'quattuoroctoginticentillion', 'quinoctoginticentillion', 
-        'sexoctoginticentillion', 'septoctoginticentillion', 'octooctoginticentillion', 'novemoctoginticentillion', 'nonaginticentillion', 
-        'unnonaginticentillion', 'duononaginticentillion', 'trennonaginticentillion', 'quattuornonaginticentillion', 'duocentillion', 'ttricentillion', 
-        'billion quintillion', 'decicentillion', 'undecicentillion', 'duodecicentillion', 'tredecicentillion', 'quattuordecicentillion', 'quindicentillion', 
-        'sexdecicentillion', 'septendecicentillion', 'octodecicentillion', 'novemdecicentillion', 'viginticentillion', 'unviginticentillion', 'untrigintillion'
-      ];
+        'quattuordecillion', 'quindecillion', 'sexdecillion', 'septendecillion', 'octodecillion', ];
+       
       
       
     if (num === 0) return 'zero';
