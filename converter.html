@@ -1,44 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WordMyNumber</title>
-  <link rel="stylesheet" href="./converterstyle.css">
-</head>
-<body>
-  <header>
-    <div class="logo">
-      <h1>WordMyNumber</h1>
-      <p>"Turn Digits Into Words – Seamlessly, Globally, Accurately!"</p>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="./welcomepage.html">Home</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section id="features" class="features">
-    <div class="converter">
+<section id="features" class="features">
+  <div class="converter">
       <h3>Number to Word Converter</h3>
       <p>Enter a number to convert it into its word format:</p>
       <input type="text" id="numberInput" placeholder="Enter a number" />
+      <select id="numberingSystem">
+          <option value="international">International</option>
+          <option value="indian">Indian</option>
+      </select>
       <button id="convertButton">Convert</button><br>
       <p id="result"></p>
-    </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2024 WordMyNumber</p>
-    <a href="./about.html">About</a>
-    <div class="social-links">
-      <a href="https://github.com/yourrepo" target="_blank">GitHub</a>
-      <a href="https://www.instagram.com/yourprofile" target="_blank">Instagram</a>
-      <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-    </div>
-  </footer>
-
-  <script src="./converterscript.js"></script>
-</body>
-</html>
+  </div>
+</section>
