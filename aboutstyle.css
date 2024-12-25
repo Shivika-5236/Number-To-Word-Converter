@@ -1,20 +1,20 @@
-/* General Styles */
+
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  background-color: #fafafa; /* Light background */
-  color: #333; /* Dark text for better contrast */
+  background-color: #fafafa; 
+  color: #333; 
 }
 
 header {
-  background-color: #c650fd; /* Purple background */
+  background-color: #c650fd; 
   padding: 0.5rem 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid #9b4bc3; /* Light Pinkish-Purple */
+  border-bottom: 2px solid #9b4bc3; 
 }
 
 nav ul {
@@ -36,7 +36,7 @@ nav ul li a:hover, nav .btn:hover {
   color: #9b4bc3;
 }
 
-/* Welcome Section */
+
 .welcome {
   display: flex;
   justify-content: center; 
@@ -54,7 +54,7 @@ nav ul li a:hover, nav .btn:hover {
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 2rem;
-  color: #4e46e2; /* Purple Text */
+  color: #4e46e2; 
 }
 
 .welcome .content p {
@@ -65,7 +65,7 @@ nav ul li a:hover, nav .btn:hover {
 
 .welcome .content button {
   padding: 0.5rem 1rem;
-  background-color: #b771db; /* Pinkish-Purple */
+  background-color: #b771db;
   color: white;
   border: none;
   border-radius: 5px;
@@ -75,14 +75,14 @@ nav ul li a:hover, nav .btn:hover {
 }
 
 .welcome .content button:hover {
-  background-color: #6c63ff; /* Blueish hover effect */
-  transform: scale(1.05); /* Slight button hover effect */
+  background-color: #6c63ff;
+  transform: scale(1.05); 
 }
 
-/* Footer */
+
 footer {
   padding: 2rem;
-  background-color: #333; /* Dark background */
+  background-color: #333; 
   color: white;
   text-align: center;
 }
@@ -96,7 +96,7 @@ footer .social-links a {
 }
 
 footer .social-links a:hover {
-  color: #9b4bc3; /* Pinkish-Purple hover effect */
+  color: #9b4bc3;
 }
 
 footer p {

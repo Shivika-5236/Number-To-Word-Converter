@@ -1,4 +1,4 @@
-/* General Styles */
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -26,7 +26,7 @@ header h1 {
   text-align: center;
 }
 
-/* Navigation Bar */
+
 nav ul {
   list-style: none;
   margin: 0;
@@ -48,7 +48,7 @@ nav ul li a:hover, nav .btn:hover {
   color: #ffcc00;
 }
 
-/* Welcome Section */
+
 .welcome {
   display: flex;
   flex-direction: column;
@@ -98,7 +98,7 @@ nav ul li a:hover, nav .btn:hover {
   transform: scale(1.05);
 }
 
-/* Button Container */
+
 .button-container {
   margin-top: 1.5rem;
   display: flex;
@@ -106,7 +106,7 @@ nav ul li a:hover, nav .btn:hover {
   justify-content: center;
 }
 
-/* Primary Button Style */
+
 .btn-primary,
 .btn-secondary {
   display: inline-block;
@@ -121,14 +121,14 @@ nav ul li a:hover, nav .btn:hover {
   animation: fadeIn 1s ease-in-out;
 }
 
-/* Hover Effect */
+
 .btn-primary:hover,
 .btn-secondary:hover {
   background-color: #b3a9f4;
   transform: scale(1.05);
 }
 
-/* Secondary Button Style */
+
 .btn-secondary {
   background-color: #ffcc00;
   color: #333;
@@ -139,7 +139,7 @@ nav ul li a:hover, nav .btn:hover {
   transform: scale(1.05);
 }
 
-/* Footer */
+
 footer {
   padding: 2rem;
   background: #35c2e1;

@@ -1,25 +1,25 @@
-// DOM Elements
+
 let container = document.querySelector(".container");
 let signUpBtn = document.getElementById("signUp");
 let logInBtn = document.getElementById("logIn");
 let signupSubmit = document.getElementById("signupbtn");
 let loginSubmit = document.getElementById("loginbtn");
 
-// Switch to Sign-Up Panel
+
 signUpBtn.addEventListener('click', () => {
    container.classList.add("right-panel-active");
 });
 
-// Switch to Log-In Panel
+
 logInBtn.addEventListener('click', () => {
    container.classList.remove("right-panel-active");
 });
 
-// Signup Functionality
+
 signupSubmit.addEventListener('click', (e) => {
    e.preventDefault();
 
-   // Get Input Values
+   
    let firstName = document.getElementById("firstName").value.trim();
    let lastName = document.getElementById("lastName").value.trim();
    let email = document.getElementById("email").value.trim();
@@ -35,14 +35,14 @@ signupSubmit.addEventListener('click', (e) => {
       return;
    }
 
-   // Save New User to Local Storage
+   
    let newUser = { firstName, lastName, email, password };
    localStorage.setItem(email, JSON.stringify(newUser));
    alert("Registration successful!");
-   logInBtn.click(); // Switch to Log-In Panel
+   logInBtn.click(); 
 });
 
-// Login Functionality
+
 loginSubmit.addEventListener('click', (e) => {
    e.preventDefault();
 
@@ -54,7 +54,7 @@ loginSubmit.addEventListener('click', (e) => {
       return;
    }
 
-   // Retrieve User Data
+   
    let userData = JSON.parse(localStorage.getItem(email));
 
    if (!userData) {
