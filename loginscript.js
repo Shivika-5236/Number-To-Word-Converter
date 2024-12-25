@@ -1,21 +1,18 @@
 // DOM Elements
-let loginbtn = document.getElementById("login_btn");
-let signUpPage = document.getElementById("signup");
-let logInPage = document.getElementById("login");
-let signupbtn = document.getElementById("signup_btn");
+let container = document.querySelector(".container");
+let signUpBtn = document.getElementById("signUp");
+let logInBtn = document.getElementById("logIn");
 let signupSubmit = document.getElementById("signupbtn");
 let loginSubmit = document.getElementById("loginbtn");
 
-// Switch to Login Page
-loginbtn.addEventListener('click', () => {
-   signUpPage.style.display = 'none';
-   logInPage.style.display = 'block';
+// Switch to Sign-Up Panel
+signUpBtn.addEventListener('click', () => {
+   container.classList.add("right-panel-active");
 });
 
-// Switch to Signup Page
-signupbtn.addEventListener('click', () => {
-   signUpPage.style.display = 'block';
-   logInPage.style.display = 'none';
+// Switch to Log-In Panel
+logInBtn.addEventListener('click', () => {
+   container.classList.remove("right-panel-active");
 });
 
 // Signup Functionality
@@ -23,12 +20,12 @@ signupSubmit.addEventListener('click', (e) => {
    e.preventDefault();
 
    // Get Input Values
-   let firstName = document.getElementById("firstName").value;
-   let lastName = document.getElementById("lastName").value;
-   let email = document.getElementById("email").value;
-   let password = document.getElementById("password").value;
+   let firstName = document.getElementById("firstName").value.trim();
+   let lastName = document.getElementById("lastName").value.trim();
+   let email = document.getElementById("email").value.trim();
+   let password = document.getElementById("password").value.trim();
 
-   if (!email || !password || !firstName || !lastName) {
+   if (!firstName || !lastName || !email || !password) {
       alert("Please fill in all fields!");
       return;
    }
@@ -39,18 +36,18 @@ signupSubmit.addEventListener('click', (e) => {
    }
 
    // Save New User to Local Storage
-   let newUser = { firstName, lastName, password, email };
+   let newUser = { firstName, lastName, email, password };
    localStorage.setItem(email, JSON.stringify(newUser));
    alert("Registration successful!");
-   loginbtn.click();
+   logInBtn.click(); // Switch to Log-In Panel
 });
 
 // Login Functionality
 loginSubmit.addEventListener('click', (e) => {
    e.preventDefault();
 
-   let email = document.getElementById("email_login").value;
-   let password = document.getElementById("password_login").value;
+   let email = document.getElementById("email_login").value.trim();
+   let password = document.getElementById("password_login").value.trim();
 
    if (!email || !password) {
       alert("Please fill in all fields!");
@@ -67,9 +64,9 @@ loginSubmit.addEventListener('click', (e) => {
 
    if (userData.password === password) {
       alert("Login successful!");
-      localStorage.setItem("isLoggedIn", true); // Mark as logged in
-      localStorage.setItem("currentUser", JSON.stringify(userData)); // Store current user
-      window.location.href = "converter.html"; // Redirect to Profile Page
+      localStorage.setItem("isLoggedIn", true); 
+      localStorage.setItem("currentUser", JSON.stringify(userData)); 
+      window.location.href = "converter.html"; 
    } else {
       alert("Invalid email or password.");
    }
