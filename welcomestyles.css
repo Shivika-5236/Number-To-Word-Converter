@@ -4,13 +4,13 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  background: #b14cec;
+  background: #e3ebf0;
   color: #333;
 }
 
 header {
   background: #2ecbd9;
-  color: white;
+  color: rgb(8, 1, 1);
   padding: 1rem 2rem;
   display: flex;
   justify-content: center;
@@ -38,7 +38,7 @@ nav ul {
 
 nav ul li a, nav .btn {
   text-decoration: none;
-  color: #ffffff;
+  color: #090101;
   font-weight: bold;
   font-size: 1rem;
   transition: color 0.3s ease;
@@ -143,7 +143,7 @@ nav ul li a:hover, nav .btn:hover {
 footer {
   padding: 2rem;
   background: #35c2e1;
-  color: rgb(246, 241, 241);
+  color: rgb(1, 0, 0);
   text-align: center;
   box-shadow: 0 -4px 6px rgba(240, 236, 236, 0.1);
   animation: fadeInUp 1.5s ease-in-out;
@@ -154,7 +154,7 @@ footer .social-links {
 }
 
 footer .social-links a {
-  color: white;
+  color: rgb(17, 4, 4);
   text-decoration: none;
   margin: 0 10px;
   font-size: 1.2rem;

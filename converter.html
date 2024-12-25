@@ -1,13 +1,44 @@
-<section id="features" class="features">
-  <div class="converter">
-      <h3>Number to Word Converter</h3>
-      <p>Enter a number to convert it into its word format:</p>
-      <input type="text" id="numberInput" placeholder="Enter a number" />
-      <select id="numberingSystem">
-          <option value="international">International</option>
-          <option value="indian">Indian</option>
-      </select>
-      <button id="convertButton">Convert</button><br>
-      <p id="result"></p>
-  </div>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number to Words Converter</title>
+    <link rel="stylesheet" href="converterstyle.css"> 
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>WordMyNumber</h1>
+            <p>Convert numbers to words seamlessly!</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./welcomepage.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="features" class="features">
+        <div class="converter">
+            <h3>Number to Word Converter</h3>
+            <p>Enter a number to convert it into its word format:</p>
+            <input type="text" id="numberInput" placeholder="Enter a number" /><br>
+            <select id="numberingSystem">
+                <option value="international">International</option>
+                <option value="indian">Indian</option>
+            </select><br>
+            <button id="convertButton">Convert</button><br>
+            <p id="result"></p>
+        </div>
+    </section>
+    <footer>
+        <p>Number to Words Converter.</p>
+        <div class="social-links">
+            <a href="#">Linkdin</a> | 
+            <a href="#">Github</a> | 
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+    <script src="converterscript.js"></script>
+</body>
+</html>

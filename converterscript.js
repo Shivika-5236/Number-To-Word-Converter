@@ -105,29 +105,31 @@ const validateAndCleanNumberInput = (input) => {
     return { valid: true, number: parseInt(input, 10) };
 };
 
-document.getElementById('convertButton').addEventListener('click', () => {
-    const numberInput = document.getElementById('numberInput').value.trim();
-    const numberingSystem = document.getElementById('numberingSystem').value;
-    const result = document.getElementById('result');
+document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('convertButton').addEventListener('click', () => {
+        const numberInput = document.getElementById('numberInput').value.trim();
+        const numberingSystem = document.getElementById('numberingSystem').value;
+        const result = document.getElementById('result');
 
-    if (numberInput === '') {
-        result.textContent = 'Please enter a number!';
-        return;
-    }
+        if (numberInput === '') {
+            result.textContent = 'Please enter a number!';
+            return;
+        }
 
-    const { valid, number } = validateAndCleanNumberInput(numberInput);
+        const { valid, number } = validateAndCleanNumberInput(numberInput);
 
-    if (!valid) {
-        result.textContent = 'Invalid number format! Please enter a number in the correct format.';
-        return;
-    }
+        if (!valid) {
+            result.textContent = 'Invalid number format! Please enter a number in the correct format.';
+            return;
+        }
 
-    let numberWords = '';
-    if (numberingSystem === 'international') {
-        numberWords = numberToWordsInternational(number);
-    } else if (numberingSystem === 'indian') {
-        numberWords = numberToWordsIndian(number);
-    }
+        let numberWords = '';
+        if (numberingSystem === 'international') {
+            numberWords = numberToWordsInternational(number);
+        } else if (numberingSystem === 'indian') {
+            numberWords = numberToWordsIndian(number);
+        }
 
-    result.textContent = `Converted Words: ${numberWords}`;
+        result.textContent = `Converted Words: ${numberWords}`;
+    });
 });

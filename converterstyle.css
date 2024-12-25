@@ -9,12 +9,12 @@ body {
 
 /* Header */
 header {
-  background-color: #07050b; 
+  background-color: #15dfdf; 
   padding: 1rem;
   display: flex;
   justify-content: center; 
   align-items: center;
-  border-bottom: 2px solid #c67aec; 
+  border-bottom: 2px solid #7ad3ec; 
   position: relative;
 }
 
@@ -36,7 +36,7 @@ nav ul {
 
 nav ul li a, nav .btn {
   text-decoration: none;
-  color: #ad319c; 
+  color: #0b000a; 
   font-size: 1.1rem;
 }
 
@@ -44,10 +44,10 @@ nav ul li a:hover {
   color: #1588af; 
 }
 
-/* WordMyNumber Header */
+/* Header Logo */
 header .logo {
   text-align: center;
-  color: white;
+  color: rgb(14, 1, 1);
 }
 
 header .logo h1 {
@@ -62,57 +62,51 @@ header .logo p {
 
 /* Features Section */
 .features {
-  padding: 6rem;
-  background: linear-gradient(45deg, #e869ef, #35c2e1);
-
-
+  padding: 6rem 2rem;
+  background: linear-gradient(45deg, #f8f8f8, #fcfafa);
   text-align: center;
-  font-size: 30px;
+  font-size: 18px;
   color: #333;
 }
 
-.features .tabs button {
-  background-color: #6c63ff; 
-  color: white;
-  border: none;
-  margin: 1rem;
-  padding: 1rem 2rem;
-  border-radius: 10px;
-  transition: background-color 0.3s ease;
+.features h3 {
+  font-size: 2rem;
+  color: hsl(198, 75%, 62%); 
 }
 
-.features .tabs button:hover {
-  background-color: #7a5ee8; 
+.features p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
 }
 
 /* Converter Section */
 .converter {
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 
-.converter input, .converter button {
+.converter input, .converter button, .converter select {
   padding: 0.5rem;
   margin: 0.5rem 0;
-  width: 50%;
+  width: 80%;
+  max-width: 400px;
   border: 1px solid #ddd;
   border-radius: 5px;
   font-size: 1rem;
 }
 
 .converter button {
-  background-color: #6c63ff; 
+  background-color:#036077 ; 
   color: white;
   border: none;
   cursor: pointer;
 }
 
 .converter button:hover {
-  background-color: #7a5ee8; 
+  background-color: #63c8ff; 
 }
 
 /* Dropdown Styling */
-#caseSelect, #scaleSelect {
-  width: 200px;
+#numberingSystem {
   padding: 10px;
   border: 2px solid #9b4bc3; 
   border-radius: 5px;
@@ -122,21 +116,10 @@ header .logo p {
   transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
-#caseSelect:focus, #scaleSelect:focus {
+#numberingSystem:focus {
   outline: none;
   background-color: #e0f7fa;
-  border-color: #00796b;
-}
-
-#caseSelect option, #scaleSelect option {
-  padding: 10px;
-  background-color: #fff;
-  color: #333;
-  font-size: 16px;
-}
-
-#caseSelect option:hover, #scaleSelect option:hover {
-  background-color: #f1f1f1;
+  border-color: #1fb3d0;
 }
 
 /* Output Box for the Result */
@@ -144,7 +127,7 @@ header .logo p {
   display: inline-block;
   padding: 1rem;
   margin-top: 1rem;
-  border: 2px solid #6c63ff; 
+  border: 2px solid #48b3da; 
   border-radius: 10px;
   background-color: #f4f4f9;
   color: #333;
@@ -152,23 +135,20 @@ header .logo p {
   max-width: 90%;
   word-wrap: break-word;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-#result {
   font-weight: bold;
-  color: #6c63ff; 
+  color: #021217; 
 }
 
 /* Footer */
 footer {
   padding: 1rem;
-  background-color: #120d1e; 
-  color: white;
+  background-color: #15dfdf; 
+  color: rgb(10, 0, 0);
   text-align: center;
 }
 
 footer .social-links a {
-  color: white;
+  color: rgb(4, 0, 0);
   text-decoration: none;
   margin: 0 10px;
   font-size: 1rem;
