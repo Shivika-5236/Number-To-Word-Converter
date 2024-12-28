@@ -1,106 +1,106 @@
-
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  background-color: #fafafa; 
-  color: #333; 
+  color: #333;
 }
 
 header {
-  background-color: #c650fd; 
-  padding: 0.5rem 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 2px solid #9b4bc3; 
+  background-color: #007bff;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.logo p {
+  font-style: italic;
+  margin: 10px 0 0;
 }
 
 nav ul {
   list-style: none;
-  margin: 0;
   padding: 0;
-  display: flex;
-  gap: 2rem;
 }
 
-nav ul li a, nav .btn {
-  text-decoration: none;
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav a {
   color: white;
-  font-size: 1.1rem;
-  transition: color 0.3s ease;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-nav ul li a:hover, nav .btn:hover {
-  color: #9b4bc3;
+nav a:hover {
+  text-decoration: underline;
 }
-
 
 .welcome {
-  display: flex;
-  justify-content: center; 
-  align-items: center;
-  text-align: center; 
-  padding: 5rem 3rem;
-  background-color: #eef2f3;
+  background: #f8f9fa;
+  padding: 50px 20px;
+  text-align: center;
 }
 
-.welcome .content {
-  max-width: 60%;
+.content h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
 }
 
-.welcome .content h2 {
-  font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 2rem;
-  color: #4e46e2; 
+.content p {
+  max-width: 600px;
+  margin: 0 auto 20px;
+  padding: 0 15px;
 }
-
-.welcome .content p {
-  font-size: 1.2rem;
-  color: #333;
-  margin-bottom: 2rem;
-}
-
-.welcome .content button {
-  padding: 0.5rem 1rem;
-  background-color: #b771db;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.welcome .content button:hover {
-  background-color: #6c63ff;
-  transform: scale(1.05); 
-}
-
 
 footer {
-  padding: 2rem;
-  background-color: #333; 
+  background-color: #343a40;
   color: white;
   text-align: center;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer .social-links {
+  margin-top: 10px;
 }
 
 footer .social-links a {
   color: white;
-  text-decoration: none;
   margin: 0 10px;
-  font-size: 1.1rem;
-  transition: color 0.3s ease;
+  text-decoration: none;
 }
 
 footer .social-links a:hover {
-  color: #9b4bc3;
+  text-decoration: underline;
 }
 
-footer p {
-  margin-top: 1rem;
-  font-size: 1rem;
+#home1{
+  color: #343a40;
+  font-size: x-large;
+  text-decoration: underline;
 }
 
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .logo h1 {
+      font-size: 2em;
+  }
+
+  .content h2 {
+      font-size: 1.8em;
+  }
+  
+  .welcome {
+      padding: 30px 10px;
+  }
+}

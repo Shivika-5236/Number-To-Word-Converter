@@ -9,7 +9,7 @@ body {
 
 
 header {
-  background-color: #15dfdf; 
+  background-color: #007bff; 
   padding: 1rem;
   display: flex;
   justify-content: center; 
@@ -36,7 +36,7 @@ nav ul {
 
 nav ul li a, nav .btn {
   text-decoration: none;
-  color: #0b000a; 
+  color: #f5f0f5; 
   font-size: 1.1rem;
 }
 
@@ -142,18 +142,18 @@ header .logo p {
 
 footer {
   padding: 1rem;
-  background-color: #15dfdf; 
-  color: rgb(10, 0, 0);
+  background-color: #1c2222; 
+  color: rgb(241, 238, 238);
   text-align: center;
 }
 
 footer .social-links a {
-  color: rgb(4, 0, 0);
+  color: rgb(254, 252, 252);
   text-decoration: none;
   margin: 0 10px;
   font-size: 1rem;
 }
 
 footer .social-links a:hover {
-  color: #9b4bc3; 
+  color: #fdfbfe; 
 }
