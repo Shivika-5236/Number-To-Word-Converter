@@ -96,7 +96,7 @@ footer a#about {
   color: white;
 }
 
-/* Responsive Styles */
+
 @media (max-width: 768px) {
   .logo h1 {
       font-size: 2em;
