@@ -1,4 +1,4 @@
-// International System
+
 const numberToWordsInternational = (num) => {
     const ones = ['', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
     const teens = ['ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen'];
@@ -41,7 +41,6 @@ const numberToWordsInternational = (num) => {
     return words.trim();
 };
 
-// Indian System
 const numberToWordsIndian = (num) => {
     const ones = ['', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
     const teens = ['ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen'];
@@ -90,7 +89,7 @@ const numberToWordsIndian = (num) => {
     return words.trim();
 };
 
-// Validate and clean the input number format
+
 const validateAndCleanNumberInput = (input) => {
     const containsCommas = input.includes(',');
 
@@ -109,7 +108,6 @@ const validateAndCleanNumberInput = (input) => {
     return { valid: true, number: parseInt(input, 10) };
 };
 
-// Event listener for the button click
 document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('convertButton').addEventListener('click', () => {
         const numberInput = document.getElementById('numberInput').value.trim();
